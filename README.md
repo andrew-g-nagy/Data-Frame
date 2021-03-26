@@ -12,7 +12,7 @@ In this class, I have implemented some basic dataframe functions such as:
 -Reading a csv file into a dataframe 
 -Getting and setting data
 -Filtering dataframes based on a column condition
--Inner joins between 1 dataframes with 1 column in common
+-Inner joins between 1 dataframes with 1 column in common 
 -A group by and aggregate function. Choose a column to group by, and choose another column to aggregate. Allows, count, min, max, average and sum functions
 
 This class is certainly no replacement for Pandas, as it was created only as a personal challenge. It is not optimized for performance on larged datasets. 
