@@ -29,6 +29,7 @@ class data_frame():
     
     
     
+  
     #Return the shape of the dataframe [rows, columns]
     def shape(self):
         return [len(self.rows), len(self.col_names)]
@@ -136,7 +137,7 @@ class data_frame():
                 if row[col_index] == col_val:
                     new_rows.append(row)
                     
-            filtered = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names) 
             return filtered        
         
         if comparison == 'not':
@@ -144,7 +145,7 @@ class data_frame():
             for row in self.rows:
                 if row[col_index] != col_val:
                     new_rows.append(row)
-            filtered = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names)  
             return filtered        
         
         
@@ -154,7 +155,7 @@ class data_frame():
                 if row[col_index] > col_val:
                     new_rows.append(row)
                     
-            filtered = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names)
             return filtered               
         
         if (comparison == 'less') and (col_val.isnumeric()):
@@ -162,7 +163,7 @@ class data_frame():
             for row in self.rows:
                 if row[col_index] < col_val:
                     new_rows.append(row)
-            filtered = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names)  
             return filtered            
         
         if (comparison == 'less_or_eq') and (col_val.isnumeric()):
@@ -171,7 +172,7 @@ class data_frame():
                 if row[col_index] <= col_val:
                     new_rows.append(row)  
             
-            filtered = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names)
             return filtered        
        
         if (comparison == 'greater_or_eq') and (col_val.isnumeric()):
@@ -179,7 +180,7 @@ class data_frame():
             for row in self.rows:
                 if row[col_index] >= col_val:
                     new_rows.append(row)
-            filterd = data_frame(new_rows,self.col_names).show()  
+            filtered = data_frame(new_rows,self.col_names)  
             return filtered           
                  
                  
